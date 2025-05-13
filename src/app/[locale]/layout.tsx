@@ -19,7 +19,7 @@ const jost = LocalFont({
   src: [
     { path: "../../../public/assets/fonts/Jost-Regular.ttf", weight: "400" },
     { path: "../../../public/assets/fonts/Jost-Medium.ttf", weight: "500" },
-    { path: "../../../public/assets/fonts/Jost-Semibold.ttf", weight: "600" },
+    { path: "../../../public/assets/fonts/Jost-SemiBold.ttf", weight: "600" },
     { path: "../../../public/assets/fonts/Jost-Bold.ttf", weight: "700" },
   ],
 });
