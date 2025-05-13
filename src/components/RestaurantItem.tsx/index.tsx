@@ -12,7 +12,7 @@ const RestautantItem = ({ data }: Props) => {
   const router = useRouter();
 
   const handleRoute = () => {
-    router.push(`/restaurant/${data.id}` as never);
+    router.push(`/restaurant/${data?.id}` as never);
   };
   return (
     <div
@@ -41,7 +41,7 @@ const RestautantItem = ({ data }: Props) => {
       </div>
       <div className="pl-[15px] border-b border-b-gray9 dark:border-b-gray3 pb-[14px] mb-2 tablet:pb-[10px] tablet:mb-[7px]">
         <p className="text-mainText text-[24px] dark:text-white font-semibold mb-[5px]">
-          {data.name}
+          {data?.name}
         </p>
         <div className="flex items-center gap-[7px]">
           <Image

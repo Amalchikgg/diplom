@@ -12,7 +12,7 @@ const useAddresses = ({ enabled }: Props) => {
     queryKey: [QKAddresses],
     queryFn: () =>
       agent
-        .get(`/addresses`)
+        .get(`/addresses/`)
         .then(({ data: response }) => response as Address[]),
     enabled,
   });

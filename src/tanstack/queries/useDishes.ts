@@ -11,7 +11,7 @@ const useDishes = ({ enabled }: Props) => {
   return useQuery({
     queryKey: [QKDishes],
     queryFn: () =>
-      agent.get(`/dishes`).then(({ data: response }) => response as Dish[]),
+      agent.get(`/dishes/`).then(({ data: response }) => response as Dish[]),
     enabled,
   });
 };

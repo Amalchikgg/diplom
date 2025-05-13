@@ -12,7 +12,7 @@ const useRestaurants = ({ enabled }: Props) => {
     queryKey: [QKRestaurants],
     queryFn: () =>
       agent
-        .get(`/restaurants`)
+        .get(`/restaurants/`)
         .then(({ data: response }) => response as Restaurant[]),
     enabled,
   });

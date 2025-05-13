@@ -12,7 +12,7 @@ const useCategories = ({ enabled }: Props) => {
     queryKey: [QKCategories],
     queryFn: () =>
       agent
-        .get(`/categories`)
+        .get(`/categories/`)
         .then(({ data: response }) => response as Category[]),
     enabled,
   });

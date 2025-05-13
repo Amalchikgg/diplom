@@ -14,7 +14,7 @@ const useCreateAddress = () => {
   const client = useQueryClient();
   return useMutation({
     mutationKey: ["createAddress"],
-    mutationFn: (body: Props) => agent.post("/addresses", body),
+    mutationFn: (body: Props) => agent.post("/addresses/", body),
     onSuccess: () => {
       client.invalidateQueries({ queryKey: [QKAddresses] });
     },
